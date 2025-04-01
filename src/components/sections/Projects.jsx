@@ -1,6 +1,8 @@
 import ProjectCard from "../ui/ProjectCard";
 
 import aliasImage from "../../assets/alias-game.jpeg";
+import flickFinderImage from "../../assets/flick-finder.png";
+import hospitalImage from "../../assets/hospital.jpeg";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faCode} from "@fortawesome/free-solid-svg-icons";
@@ -22,7 +24,7 @@ const projects = [
       techStack: ["HTML", "Angular", "CSS", "Typescript"],
       repoLink: "https://github.com/tu-usuario/alias-game",
       liveLink: "https://alias-game.vercel.app",
-      image: aliasImage,
+      image: flickFinderImage,
       reverse: true,
     },
     {
@@ -31,7 +33,7 @@ const projects = [
       techStack: ["Node.js", "Express.js", "Docker", "MySQL"],
       repoLink: "https://github.com/tu-usuario/alias-game",
       liveLink: "https://alias-game.vercel.app",
-      image: aliasImage,
+      image: hospitalImage,
       reverse: false,
     },
 
@@ -39,7 +41,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="border-2 border-pink-400 px-40 py-30">
+    <section className="border-2 border-pink-400 px-60 py-30">
         <h2 className="text-4xl font-medium mb-10"> <FontAwesomeIcon icon={faCode} className="text-3xl mr-2" ></FontAwesomeIcon>Featured Projects 
         </h2>
 
