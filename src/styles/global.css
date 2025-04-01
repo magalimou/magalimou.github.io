@@ -20,6 +20,8 @@ body {
     color: var(--text-color-dark);
     line-height: 1.6;
     background-size: cover;
+    overflow-x: hidden; 
+    width: 100vw
 }
 
 /*Header*/
@@ -139,6 +141,11 @@ body {
     -moz-box-shadow: -3px 3px 29px 25px rgba(43,21,37,0.75);
 }
 
+.blur-orange-shadow{
+    box-shadow: -14px 14px 22px -10px rgba(241,134,70,0.75);
+    -webkit-box-shadow: -14px 14px 22px -10px rgba(241,134,70,0.75);
+    -moz-box-shadow: -14px 14px 22px -10px rgba(241,134,70,0.75);
+}
  
 
 

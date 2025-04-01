@@ -1,6 +1,6 @@
 import ProjectCard from "../ui/ProjectCard";
 
-import aliasImage from "../../assets/aliass.jpeg";
+import aliasImage from "../../assets/alias-game.jpeg";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faCode} from "@fortawesome/free-solid-svg-icons";
