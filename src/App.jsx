@@ -3,6 +3,7 @@ import './styles/global.css'
 
 import Header from './components/layout/Header'
 import Hero from './components/sections/Hero'
+import Projects from './components/sections/Projects'
 
 function App() {
 
@@ -10,6 +11,8 @@ function App() {
     <>
       <Header />
       <Hero />
+      <Projects />
+    
     </>
   )
 }
