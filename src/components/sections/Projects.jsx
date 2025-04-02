@@ -1,4 +1,4 @@
-import ProjectCard from "../ui/ProjectCard";
+import ProjectCard from "../ui/MainProjectCard";
 
 import aliasImage from "../../assets/alias-game.jpeg";
 import flickFinderImage from "../../assets/flick-finder.png";
@@ -41,7 +41,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="border-2 border-pink-400 px-60 py-30">
+    <section className="px-60 py-30">
         <h2 className="text-4xl font-medium mb-10"> <FontAwesomeIcon icon={faCode} className="text-3xl mr-2" ></FontAwesomeIcon>Featured Projects 
         </h2>
 
