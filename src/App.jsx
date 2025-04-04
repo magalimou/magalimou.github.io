@@ -5,8 +5,7 @@ import Header from './components/layout/Header'
 import Hero from './components/sections/Hero'
 import Projects from './components/sections/Projects'
 import SideProjects from './components/sections/SideProjects'
-
-import SideProjectCard from './components/ui/SideProjectCard'
+import AboutMe from './components/sections/AboutMe'
 
 function App() {
 
@@ -16,6 +15,7 @@ function App() {
       <Hero />
       <Projects />
       <SideProjects />
+      <AboutMe />
     
     </>
   )
