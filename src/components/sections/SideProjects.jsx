@@ -8,6 +8,12 @@ const sideProjects = [
     link: "#",
     },
     {
+        title: "Taskit",
+        description: "A task management app designed to help users stay organized and track their daily tasks. Features task creation, editing, and completion tracking. Built with a React frontend and a Node.js Express backend.",
+        techStack: ["Node.js", "Mysql", "React", "Javascript"],
+        link: "#",
+    },
+    {
     title: "World Cup fixture",
     description: "Fixture for the FIFA World Cup and results simulator. Simulates match outcomes based on predefined probabilities for each team, calculating results based on each country's probability data.",
     techStack: ["C", "Pointers", "Structs"],
@@ -19,12 +25,7 @@ const sideProjects = [
     techStack: ["HTML", "CSS", "JavaScript", "Figma"],
     link: "#",
     },
-    {
-        title: "Taskit",
-        description: "A task management app designed to help users stay organized and track their daily tasks. Features task creation, editing, and completion tracking. Built with a React frontend and a Node.js Express backend.",
-        techStack: ["Node.js", "Mysql", "React", "Javascript"],
-        link: "#",
-    },
+   
 ];
 
 const SideProjects = () => {
