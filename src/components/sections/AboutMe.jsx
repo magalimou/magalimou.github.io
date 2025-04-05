@@ -1,5 +1,6 @@
 import Pandora from '../../assets/Pandora.png';
 
+
 const AboutMe = () => {
     return (
         <section className="px-6 py-20 sm:px-12 md:px-20 lg:px-40 xl:px-60 flex flex-col  items-start  ">
