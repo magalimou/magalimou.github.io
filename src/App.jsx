@@ -7,6 +7,7 @@ import Projects from './components/sections/Projects'
 import SideProjects from './components/sections/SideProjects'
 import AboutMe from './components/sections/AboutMe'
 import Contact from './components/sections/Contact'
+import Footer from './components/layout/Footer'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <SideProjects />
       <AboutMe />
       <Contact />
+      <Footer />
     
     </>
   )
