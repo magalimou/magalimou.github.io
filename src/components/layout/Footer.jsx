@@ -9,7 +9,7 @@ const Footer = () => {
 
         <div className="flex gap-4">
           <a
-            href="https://github.com/tuusuario"
+            href="https://github.com/magalimou"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[var(--secondary-purple-color)] transition duration-300"
@@ -17,7 +17,7 @@ const Footer = () => {
             <FontAwesomeIcon icon={faGithub} className="text-2xl" />
           </a>
           <a
-            href="https://www.linkedin.com/in/tuusuario/"
+            href="https://www.linkedin.com/in/magali-mouriño"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[var(--secondary-purple-color)] transition duration-300"
