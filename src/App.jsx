@@ -9,6 +9,7 @@ import Experience from './components/sections/Experience'
 import AboutMe from './components/sections/AboutMe'
 import Contact from './components/sections/Contact'
 import Footer from './components/layout/Footer'
+import BackToTop from './components/ui/BackToTop'
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
       <AboutMe />
       <Contact />
       <Footer />
-    
+      <BackToTop />
     </>
   )
 }
