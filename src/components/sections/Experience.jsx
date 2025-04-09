@@ -42,7 +42,7 @@ const Experience = () => {
     return (
         <section
           id="experience"
-          className="py-16 px-6 sm:px-12 md:px-20 lg:px-50 xl:px-70"
+          className="scroll-mt-24 py-16 px-6 sm:px-12 md:px-20 lg:px-50 xl:px-70"
         >
           <div className="container mx-auto">
             <div className="flex gap-4 mb-15 justify-around items-center">
@@ -68,17 +68,20 @@ const Experience = () => {
               </button>
             </div>
     
-            <div className="">
-              {dataToShow.map((item, index) => (
-                <ExperienceCard
-                  key={index}
-                  title={item.title}
-                  company={item.company}
-                  description={item.description}
-                  date={item.date}
-                />
-              ))}
-            </div>
+            <div className="w-full flex justify-center">
+  <div className="w-full max-w-4xl px-4">
+    {dataToShow.map((item, index) => (
+      <ExperienceCard
+        key={index}
+        title={item.title}
+        company={item.company}
+        description={item.description}
+        date={item.date}
+      />
+    ))}
+  </div>
+</div>
+
           </div>
         </section>
     );
