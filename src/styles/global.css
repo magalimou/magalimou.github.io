@@ -124,9 +124,12 @@ body {
     position: absolute;  
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background: radial-gradient(circle farthest-corner at center center, 
-    #ED6622 100%, #e96423 100%, #cf5828 100%, #100914 57%);
-    filter: blur(60px);
+    background: radial-gradient(circle at center, 
+    #FF8C42 0%,  
+    #FF6B2D 40%,  
+    #CF5828 70%,   
+    #100914 100%); 
+    filter: blur(40px);
     z-index: -1; 
     overflow: hidden;
 }

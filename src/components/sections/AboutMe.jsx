@@ -3,7 +3,7 @@ import Pandora from '../../assets/Pandora.png';
 
 const AboutMe = () => {
     return (
-        <section id='about' className="scroll-mt-24 px-6 py-25 sm:px-12 md:px-20 lg:px-40 xl:px-70 flex flex-col items-start ">
+        <section id='about' className="relative scroll-mt-24 px-6 py-25 sm:px-12 md:px-20 lg:px-40 xl:px-70 flex flex-col items-start ">
         <div className='mb-3 '>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-medium mb-3">About Me</h2>
             <p className="mb-3 lg:text-lg md:text-base sm:text-base">I'm a software developer with experience in Node.js. I studied a Technical Degree in Programming at UTN Mar del Plata and I'm currently pursuing a degree in Systems Engineering at UNICEN.</p>
@@ -23,6 +23,8 @@ const AboutMe = () => {
               }} 
             />
         </div>
+        <div className="top-1/8 right-1/70 w-[70px] h-[70px] lg:w-[120px] lg:h-[120px]  circle-background-orange"></div>
+
 
         </section>
     );
