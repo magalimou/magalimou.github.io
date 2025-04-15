@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import {faCode} from "@fortawesome/free-solid-svg-icons";
 
 const ProjectCard = ({ title, description, techStack, repoLink, liveLink, image, reverse = false }) => {
 
@@ -23,10 +23,19 @@ const ProjectCard = ({ title, description, techStack, repoLink, liveLink, image,
         </div>
 
         
-        <div className={`flex gap-4  ${reverse ? "justify-start" : "justify-end"}`}>
-            <a href={repoLink} aria-label="GitHub Repository Link"  target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithub} className={`hover:text-gray-400 text-4xl ${reverse ? "ml-3" : ""}`} />
+        <div className={`flex  ${reverse ? "justify-start" : "justify-end"}`}>
+          
+            <a
+              href={repoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub Repository Link"
+              className="inline-flex font-medium items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-br from-[#271731]/20 to-[#271731]/20 text-white hover:text-white hover:from-[#b2a8fd]/40 hover:to-[#8c7cf6]/40 transition duration-300 border-1 border-[#8B8092] "
+            >
+              <FontAwesomeIcon icon={faCode} />
+              Code
             </a>
+
             <a href={liveLink} aria-label="Live Demo Link" target="_blank" rel="noopener noreferrer">
             </a>
         </div>
