@@ -10,7 +10,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Hero = () => {
     return (
-      <section className="px-6 py-30 md:mt-3 sm:px-12 md:px-20 lg:px-40 xl:px-70 sm:py-45 lg:py-45 xl:mt-0 pb-10">
+      <section className="px-6 py-30 md:mt-3 sm:px-12 md:px-20 lg:px-40 xl:px-70 sm:py-45 lg:py-45 xl:mt-0 pb-10" >
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
           <div className="text-center md:text-left md:w-3/4">
             <h2 className="text-2xl sm:text-4xl md:text-2xl lg:text-2xl xl:text-3xl font-medium mb-2 lg:mb-4">Hi there, I'm Magali 👋</h2>

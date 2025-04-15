@@ -41,15 +41,14 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="scroll-mt-24 px-6 py-6 sm:px-12 md:px-20 lg:px-40 xl:px-70 xl:py-25 pb-10">
-        <h2 className="text-4xl font-medium mb-10"> <FontAwesomeIcon icon={faCode} className="text-3xl mr-2" ></FontAwesomeIcon>Featured Projects 
+    <section id="projects" className="scroll-mt-24 px-6 py-6 sm:px-12 md:px-20 lg:px-40 xl:px-65 xl:py-25  ">
+        <h2 className="text-4xl font-medium mb-20"> <FontAwesomeIcon icon={faCode} className="text-3xl mr-2" ></FontAwesomeIcon>Featured Projects 
         </h2>
 
          {projects.map((project, index) => (
         <ProjectCard key={index} {...project} />
          ))}
         
-    
     </section>
   );
 };
