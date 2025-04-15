@@ -32,14 +32,14 @@ const sideProjects = [
 const SideProjects = () => {
 
     return (
-        <section className="px-6 py-20 xl:py-25 sm:px-12 md:px-20 lg:px-40 xl:px-70 pb-10">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-medium mb-6 sm:mb-8 md:mb-10">Additional Projects I’ve Built</h2>
+        <section className="relative px-6 py-20 lg:py-10 sm:px-12 md:px-20 lg:px-40 xl:px-70 pb-10">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold mb-6 sm:mb-8 md:mb-10">Additional Projects I’ve Built</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
             {sideProjects.map((project, index) => (
                 <SideProjectCard key={index} {...project} />
             ))}
         </div>
-        <div className="circle-background-purple top-[420%] left-[50%] w-[30vw] h-[30vw]"></div>
+        <div className="circle-background-purple top-5/10 left-5/10 w-[250px] h-[250px] lg:w-[450px] lg:h-[450px]"></div>
         </section>
     );
 }

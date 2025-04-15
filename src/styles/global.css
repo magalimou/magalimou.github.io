@@ -89,22 +89,7 @@ body {
     border-radius: 50%;
     background: radial-gradient(circle farthest-corner at center center, 
       #f2793d 0%, #e96423 14%, #cf5828 33%, #331048 65%, #331048 83%, #100914 100%);
-    filter: blur(35px);
-    z-index: -1; 
-    overflow: hidden;
-}
-
-.circle-background-2{
-    position: absolute;  
-    top: 70%;
-    left: 90%;
-    transform: translate(-50%, -50%);
-    width: 20vw; 
-    height: 20vw;
-    border-radius: 50%;
-    background: radial-gradient(circle farthest-corner at center center, 
-      #f2793d 25%, #e96423 18%, #cf5828 23%, #100914 57%);
-    filter: blur(35px);
+    filter: blur(42px);
     z-index: -1; 
     overflow: hidden;
 }
@@ -129,7 +114,7 @@ body {
     #FF6B2D 40%,  
     #CF5828 70%,   
     #100914 100%); 
-    filter: blur(40px);
+    filter: blur(35px);
     z-index: -1; 
     overflow: hidden;
 }

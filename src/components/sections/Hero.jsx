@@ -37,8 +37,6 @@ const Hero = () => {
             />
           </div>
         </div>
-  
-        <div className="circle-background-2"></div>
       </section>
     );
   };
