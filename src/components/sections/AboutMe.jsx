@@ -13,13 +13,16 @@ const AboutMe = () => {
             I’m never working alone —my cat, Pandora, insists on supervising my projects (mostly by sleeping on my keyboard).
             </p>
         </div>
-        <div className='items-end justify-end flex'>
+        <div className='items-end justify-end flex cursor-pointer'>
             <img className='w-30 h-30 sm:w-30 sm:h-30 md:w-30 md:h-30 object-cover rounded-full shadow-lg  transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl' 
             src={Pandora} 
-            alt="This is a close-up image of a cat's face, specifically the head, set against a circular, gradient background. The cat appears to be a tabby, with a pattern of dark stripes or swirls on its light-colored fur. Its eyes are large and yellow, and it has a small, pink nose. The cat's ears are perked up, indicating alertness. The background is a gradient of gray, fading to a reddish-orange hue in the center, directly behind the cat's head. The image is cropped to show only the cat's face and the immediate surrounding area, emphasizing its features." />
+            alt="This is a close-up image of a cat's face, specifically the head, set against a circular, gradient background. The cat appears to be a tabby, with a pattern of dark stripes or swirls on its light-colored fur. Its eyes are large and yellow, and it has a small, pink nose. The cat's ears are perked up, indicating alertness. The background is a gradient of gray, fading to a reddish-orange hue in the center, directly behind the cat's head. The image is cropped to show only the cat's face and the immediate surrounding area, emphasizing its features."
+            onClick={() => {
+                const audio = new Audio('/sounds/meow.mp3'); 
+                audio.play();
+              }} 
+            />
         </div>
-        <div className='circle-background-purple top-[520%] left-[90%] w-[20vw] h-[20vw]'></div>
-        <div className='circle-background-orange top-[550%] left-[80%] w-[10vw] h-[10vw]'></div>
 
         </section>
     );
