@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import SideProjectCard from "../ui/SideProjectCard";
 
 const sideProjects = [
@@ -36,7 +38,15 @@ const SideProjects = () => {
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold mb-6 sm:mb-8 md:mb-10">Additional Projects I’ve Built</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
             {sideProjects.map((project, index) => (
-                <SideProjectCard key={index} {...project} />
+                <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 80, scale: 0.95 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{ duration: 0.6, ease: 'easeOut', delay: index * 0.2 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                >
+                    <SideProjectCard {...project} />
+                </motion.div>
             ))}
         </div>
         <div className="circle-background-purple top-5/10 left-5/10 w-[250px] h-[250px] lg:w-[450px] lg:h-[450px]"></div>

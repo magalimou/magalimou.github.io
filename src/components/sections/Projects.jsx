@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import ProjectCard from "../ui/MainProjectCard";
 
 import aliasImage from "../../assets/alias-game.jpeg";
@@ -45,9 +47,18 @@ const Projects = () => {
         <h2 className="font-medium text-3xl sm:text-3xl md:text-4xl lg:text-4xl "> <FontAwesomeIcon icon={faCode} className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl mr-2" ></FontAwesomeIcon>Featured Projects 
         </h2>
 
-         {projects.map((project, index) => (
-        <ProjectCard key={index} {...project} />
-         ))}
+       {projects.map((project, index) => (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 80, scale: 0.95 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.6, ease: 'easeOut', delay: index * 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          <ProjectCard {...project} />
+        </motion.div>
+        ))}
+
         
         <div className="top-11/13 left-/10 w-[0px] h-[0px] lg:w-[200px] lg:h-[200px]  circle-background-orange"></div>
     </section>
