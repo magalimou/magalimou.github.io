@@ -13,7 +13,7 @@ const Hero = () => {
       <section className="px-6 py-30 md:mt-3 sm:px-12 md:px-20 lg:px-40 xl:px-70 sm:py-45 lg:py-45 xl:mt-0 pb-10" >
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
           <div className="text-center md:text-left md:w-3/4">
-            <h2 className="text-2xl sm:text-4xl md:text-2xl lg:text-2xl xl:text-3xl font-medium mb-2 lg:mb-4">Hi there, I'm Magali 👋</h2>
+            <h2 className="text-2xl sm:text-4xl md:text-2xl lg:text-2xl xl:text-3xl font-medium mb-2 lg:mb-4">Hi there, I'm Magali <span className="wave-hand">👋</span></h2>
             <h1 className="text-4xl sm:text-6xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold lg:mb-5 mb-3">Software Developer</h1>
             <p className="sm:text-xl md:text-base lg:text-lg xl:text-xl lg:pr-10 sm:px-0 px-5">
               I'm a software developer specializing in building (and sometimes designing) high-performing digital experiences.
@@ -55,7 +55,7 @@ const Hero = () => {
   
           <div className="w-40 sm:w-60 md:w-1/3 lg:w-1/3 max-w-xs">
             <img
-              className="w-full h-auto rounded-full blur-shadow"
+              className="w-full h-auto rounded-full blur-shadow floating "
               src={profilePhoto}
               alt="Profile"
             />

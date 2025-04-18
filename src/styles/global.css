@@ -36,6 +36,32 @@ body {
   .animate-fade-in {
     animation: fade-in 0.3s ease-out;
   }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  
+  .floating {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  @keyframes wave {
+    0% { transform: rotate( 0.0deg); }
+    10% { transform: rotate(14.0deg); }  
+    20% { transform: rotate(-8.0deg); }
+    30% { transform: rotate(14.0deg); }
+    40% { transform: rotate(-4.0deg); }
+    50% { transform: rotate(10.0deg); }
+    60% { transform: rotate( 0.0deg); }  
+    100% { transform: rotate( 0.0deg); }
+  }
+  
+  .wave-hand {
+    display: inline-block;
+    transform-origin: 70% 70%;
+    animation: wave 2s ease-in-out infinite;
+  }
   
 
 /*Buttons*/
@@ -125,7 +151,7 @@ body {
     -moz-box-shadow: -3px 3px 29px 25px rgba(43,21,37,0.75);
 }
 
-
+  
  
 
 
