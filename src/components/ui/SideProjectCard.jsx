@@ -14,17 +14,31 @@ const SideProjectCard = ({ title, description, techStack, repoLink, liveLink }) 
         <div className="flex justify-between items-center">
             <FontAwesomeIcon className="text-[#FFA56F] text-4xl" icon={faFile}></FontAwesomeIcon>
             <div className="gap-5 flex items-center">
-              {repoLink && (
+              <div className="relative group">
               <a href={repoLink} target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon className="text-2xl hover:text-orange-300 transition" icon={faCode} />
+                <FontAwesomeIcon className=" cursor-pointer text-2xl hover:text-orange-300 transition" icon={faCode} />
               </a>
-              )}
+              <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 
+                              bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 
+                              transition pointer-events-none z-10">
+                Code
+              </span>
+              </div>
 
-              {liveLink && (
-                <a href={liveLink} target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon className="text-2xl hover:text-orange-300 transition" icon={faArrowUpRightFromSquare} />
-                </a>
-              )}
+              <div className="relative group">
+                {liveLink && (
+                  <a href={liveLink} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon className=" cursor-pointer text-2xl hover:text-orange-300 transition" icon={faArrowUpRightFromSquare} />
+                  </a>
+                )}
+                <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 
+                                bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 
+                                transition pointer-events-none z-10">
+                  
+                  Live
+                </span>
+              </div>
+
             </div>
         </div>
         <div>
