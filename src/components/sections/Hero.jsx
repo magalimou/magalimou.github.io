@@ -27,8 +27,8 @@ const Hero = () => {
             </a>
               
               <div className="relative group">
-              <a href="https://www.linkedin.com/in/magali-mouriño/" target="_blank" rel="noopener noreferrer">
-                <Button aria-label="Visit Linkedin profile" text="" icon={faLinkedinIn} className="btn-icon" />
+              <a aria-label="Visit Linkedin profile" href="https://www.linkedin.com/in/magali-mouriño/" target="_blank" rel="noopener noreferrer">
+                <Button  text="" icon={faLinkedinIn} className="btn-icon" />
                 </a>
                 <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2
                   text-sm bg-black text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition
@@ -38,8 +38,8 @@ const Hero = () => {
               </div>
 
               <div className="relative group">
-              <a href="https://github.com/magalimou" target="_blank" rel="noopener noreferrer">
-                <Button aria-label="Visit Github profile" text="" icon={faGithub} className="btn-icon" />
+              <a aria-label="Visit Github profile" href="https://github.com/magalimou" target="_blank" rel="noopener noreferrer">
+                <Button  text="" icon={faGithub} className="btn-icon" />
                 </a>
                 <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2
                   text-sm bg-black text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition
@@ -49,8 +49,8 @@ const Hero = () => {
               </div>
 
               <div className="relative group">
-              <a href="mailto:maguimourino@gmail.com">
-                <Button aria-label="Send email" text="" icon={faEnvelope} className="btn-icon" />
+              <a aria-label="Send email" href="mailto:maguimourino@gmail.com">
+                <Button  text="" icon={faEnvelope} className="btn-icon" />
                 </a>
                 <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2
                   text-sm bg-black text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition
