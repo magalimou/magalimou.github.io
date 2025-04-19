@@ -16,14 +16,14 @@ const ProjectCard = ({ title, description, techStack, repoLink, liveLink, image,
         <h3 className={`text-3xl font-semibold text-end mb-6 ${reverse ? "text-start" : "text-start sm:text-end"}`}>{title}</h3>
         <p className={` text-xl mt-2 mb-7 p-6 border border-[#F18646] ${reverse ? "shadow-[16px_14px_22px_-10px_rgba(241,134,70,0.75)] text-start" : "shadow-[-14px_14px_22px_-10px_rgba(241,134,70,0.75)] lg:text-right"} `}>{description}</p>
 
-        <div className={`flex gap-4 mt-4 mb-6 text-lg text-[#b2a8fd] ${reverse ? "justify-start" : "justify-end"}`}>
+        <div className={`flex gap-4 mt-4 mb-6 text-lg text-[#b2a8fd] ${reverse ? "justify-start" : "sm:justify-end justify-start"}`}>
           {techStack.map((tech, index) => (
             <span className={`hover:text-white transition duration-300 ${reverse ? "mr-3" : "ml-3"}`} key={index}>{tech}</span>
           ))}
         </div>
 
         
-        <div className={`flex  ${reverse ? "justify-start" : "justify-end"}`}>
+        <div className={`flex  ${reverse ? "justify-start" : "sm:justify-end justify-start"}`}>
           
             <a
               href={repoLink}

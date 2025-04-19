@@ -12,10 +12,10 @@ const EmailWithCopy = ({icon}) => {
   };
 
   return (
-    <div className="relative flex items-center gap-2 border-2 border-[var(--primary-purple-color)] rounded-full py-2 px-3">
+    <div className="relative flex items-center gap-2 border-2 border-[var(--primary-purple-color)] rounded-full py-2 px-4">
       <span className="text-sm sm:text-base">{email}</span>
       <button onClick={handleCopy} title="Copy email">
-        <FontAwesomeIcon icon={icon} className="text-white hover:text-[var(--primary-purple-color)] transition duration-300" />
+        <FontAwesomeIcon icon={icon} className="cursor-pointer text-white hover:text-[var(--primary-purple-color)] transition duration-300 text-base" />
       </button>
       {copied && <span className="absolute -top-6 left-1/2 -translate-x-1/2 bg-orange-700 text-white text-sm px-2 py-1 rounded-md shadow-md animate-fade-in">Copied!</span>}
     </div>
