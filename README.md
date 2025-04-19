@@ -1,12 +1,41 @@
-# React + Vite
+# 💻 Magalí Mouriño – Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the first version of my personal portfolio, built with **React** and **TailwindCSS**. It showcases my background, experience, and some of the projects I've worked on so far.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ React
+- 🎨 TailwindCSS
+- 🐱 FontAwesome Icons
+- 📄 GitHub Pages (for deployment)
 
-## Expanding the ESLint configuration
+## 📂 Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive design
+- Light/Dark mode toggle (in progress)
+- Smooth scroll navigation
+- Downloadable resume (PDF)
+- Accessible buttons and links
+- Interactive elements (like an Easter egg 😺)
+
+## 🌐 Live Demo
+
+You can visit the live version here:  
+[https://magalimou.github.io](https://magalimou.github.io)
+
+## 📥 Installation
+
+```bash
+git clone https://github.com/magalimou/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
+
+## 📦 Deployment
+This portfolio is deployed using GitHub Pages.
+
+```bash
+npm run build
+npm run deploy
+```
