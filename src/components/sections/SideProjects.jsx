@@ -8,7 +8,7 @@ const sideProjects = [
         description: "A marketplace for buying, selling, and trading Pokémon cards. Integrates an external Pokémon card API to fetch real-time card data. Focused on clean code, modularity, and maintainability.",
         techStack: ["Java", "OOP", "JSON File"],
         repoLink: "https://github.com/MateoCunsolo/pokemarket",
-        },
+    },
     {
         title: "Taskit",
         description: "A task management app designed to help users stay organized and track their daily tasks. Features task creation, editing, and completion tracking. Built with a React frontend and a Node.js Express backend.",
