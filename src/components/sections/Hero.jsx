@@ -22,10 +22,14 @@ const Hero = () => {
               I enjoy working on both backend and frontend development.
             </p>
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
+            <a href="/cv-magali-mourino.pdf" target="_blank" rel="noopener noreferrer">
               <Button text="Download CV" icon={faArrowDown} className="btn text-base" />
+            </a>
               
               <div className="relative group">
+              <a href="https://www.linkedin.com/in/magali-mouriño/" target="_blank" rel="noopener noreferrer">
                 <Button text="" icon={faLinkedinIn} className="btn-icon" />
+                </a>
                 <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2
                   text-sm bg-black text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition
                   pointer-events-none whitespace-nowrap z-50">
@@ -34,7 +38,9 @@ const Hero = () => {
               </div>
 
               <div className="relative group">
+              <a href="https://github.com/magalimou" target="_blank" rel="noopener noreferrer">
                 <Button text="" icon={faGithub} className="btn-icon" />
+                </a>
                 <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2
                   text-sm bg-black text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition
                   pointer-events-none whitespace-nowrap z-50">
@@ -43,7 +49,9 @@ const Hero = () => {
               </div>
 
               <div className="relative group">
+              <a href="mailto:maguimourino@gmail.com">
                 <Button text="" icon={faEnvelope} className="btn-icon" />
+                </a>
                 <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2
                   text-sm bg-black text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition
                   pointer-events-none whitespace-nowrap z-50">
