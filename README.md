@@ -27,7 +27,6 @@ You can visit the live version here:
 
 ```bash
 git clone https://github.com/magalimou/magalimou.github.io
-cd portfolio
 npm install
 npm run dev
 ```
