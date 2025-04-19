@@ -27,7 +27,7 @@ const Header = () => {
                   href={`#${id}`}
                   className="text-[var(--text-color-dark)] text-base px-4 py-1.5 rounded-[10px] hover:bg-[#2f1b3a] transition"
                 >
-                  {id === 'experience' ? 'Background' : id === 'about' ? 'About me' : id.charAt(0).toUpperCase() + id.slice(1)}
+                  {id === 'experience' ? 'Experience' : id === 'about' ? 'About me' : id.charAt(0).toUpperCase() + id.slice(1)}
                 </a>
               </li>
             ))}

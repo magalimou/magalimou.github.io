@@ -22,8 +22,8 @@ const Hero = () => {
               I enjoy working on both backend and frontend development.
             </p>
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
-            <a href="/cv-magali-mourino.pdf" target="_blank" rel="noopener noreferrer">
-              <Button text="Download CV" icon={faArrowDown} className="btn text-base" />
+            <a aria-label="Download my CV in PDF format" href="/cv-magali-mourino.pdf" target="_blank" rel="noopener noreferrer">
+              <Button  text="Download CV" icon={faArrowDown} className="btn text-base" />
             </a>
               
               <div className="relative group">
@@ -65,7 +65,7 @@ const Hero = () => {
             <img
               className="w-full h-auto rounded-full blur-shadow floating "
               src={profilePhoto}
-              alt="Profile"
+              alt="A charming, digitally rendered young woman with warm brown eyes and long, wavy dark hair smiles gently. She is wearing a black turtleneck sweater, blue jeans, and gold rectangular hoop earrings. The background features a soft gradient of orange and reddish hues, suggesting either a sunrise or sunset. The overall style is reminiscent of contemporary 3D animation."
             />
           </div>
         </div>
