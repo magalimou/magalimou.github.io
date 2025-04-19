@@ -15,7 +15,7 @@ const SideProjectCard = ({ title, description, techStack, repoLink, liveLink }) 
             <div className="gap-5 flex items-center">
               <div className="relative group">
               {repoLink && (
-                  <a href={repoLink} target="_blank" rel="noopener noreferrer">
+                  <a href={repoLink} aria-label="Visit Github repository" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon className=" cursor-pointer text-2xl hover:text-orange-300 transition" icon={faCode} />
                   </a>
                 )}
@@ -28,7 +28,7 @@ const SideProjectCard = ({ title, description, techStack, repoLink, liveLink }) 
 
               <div className="relative group">
                 {liveLink && (
-                  <a href={liveLink} target="_blank" rel="noopener noreferrer">
+                  <a href={liveLink} aria-label="Visit live site" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon className=" cursor-pointer text-2xl hover:text-orange-300 transition" icon={faArrowUpRightFromSquare} />
                   </a>
                 )}

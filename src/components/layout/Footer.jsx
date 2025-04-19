@@ -12,6 +12,7 @@ const Footer = () => {
             href="https://github.com/magalimou"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Github profile"
             className="hover:text-[var(--secondary-purple-color)] transition duration-300"
           >
             <FontAwesomeIcon icon={faGithub} className="text-2xl" />
@@ -20,6 +21,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/magali-mouriño"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Linkedin profile"
             className="hover:text-[var(--secondary-purple-color)] transition duration-300"
           >
             <FontAwesomeIcon icon={faLinkedin} className="text-2xl" />
