@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 
 import ProjectCard from "../ui/MainProjectCard";
 
-import aliasImage from "../../assets/alias-game.jpeg";
-import flickFinderImage from "../../assets/flick-finder.png";
-import hospitalImage from "../../assets/hospital.jpeg";
+import aliasImage from "../../assets/alias-game.webp";
+import flickFinderImage from "../../assets/flick-finder.webp";
+import hospitalImage from "../../assets/hospital.webp";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faCode} from "@fortawesome/free-solid-svg-icons";

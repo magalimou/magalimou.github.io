@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../ui/Button";  
 
-import profilePhoto from "../../assets/profile-picture.png";
+import profilePhoto from "../../assets/profile-picture.webp";
 
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'

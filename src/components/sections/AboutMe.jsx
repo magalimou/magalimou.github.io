@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from 'react';
 
-import Pandora from '../../assets/Pandora.png';
+import Pandora from '../../assets/Pandora.webp';
 
 
 const AboutMe = () => {
