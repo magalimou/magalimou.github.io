@@ -2,7 +2,7 @@
 
 This is the first version of my personal portfolio, built with **React** and **TailwindCSS**. It showcases my background, experience, and some of the projects I've worked on so far.
 
-![Preview](https://drive.google.com/file/d/1WTIW999yUcpM4lV7gmy4kO5tMVhMkpQh/view?usp=sharing)
+![Preview](https://drive.google.com/uc?export=view&id=1WTIW999yUcpM4lV7gmy4kO5tMVhMkpQh)
 
 ## 🚀 Tech Stack
 
