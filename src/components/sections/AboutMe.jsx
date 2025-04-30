@@ -60,7 +60,7 @@ const AboutMe = () => {
                 </div>
                 )}
             </motion.div>
-        <div className="top-1/8 right-1/70 w-[70px] h-[70px] lg:w-[120px] lg:h-[120px]  circle-background-orange"></div>
+        <div className="top-5/8 right-1/70 w-[70px] h-[70px] lg:w-[120px] lg:h-[120px]  circle-background-orange"></div>
 
 
         </section>
