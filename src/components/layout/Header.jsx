@@ -21,13 +21,13 @@ const Header = () => {
         {/*Deskop Menu */}
         <nav className="hidden sm:block w-full">
           <ul className="flex justify-center items-center list-none">
-            {['projects', 'experience', 'about', 'contact'].map((id, index) => (
+            {['projects', 'stack', 'about', 'contact'].map((id, index) => (
               <li key={id} className="mr-12">
                 <a
                   href={`#${id}`}
                   className="text-[var(--text-color-dark)] text-base px-4 py-1.5 rounded-[10px] hover:bg-[#2f1b3a] transition"
                 >
-                  {id === 'experience' ? 'Experience' : id === 'about' ? 'About me' : id.charAt(0).toUpperCase() + id.slice(1)}
+                  {id === 'stack' ? 'Stack' : id === 'about' ? 'About me' : id.charAt(0).toUpperCase() + id.slice(1)}
                 </a>
               </li>
             ))}
@@ -39,14 +39,14 @@ const Header = () => {
       {isOpen && (
         <nav className="sm:hidden mt-4">
           <ul className="flex flex-col items-center space-y-4">
-            {['projects', 'experience', 'about', 'contact'].map((id) => (
+            {['projects', 'tech', 'about', 'contact'].map((id) => (
               <li key={id}>
                 <a
                   href={`#${id}`}
                   onClick={() => setIsOpen(false)}
                   className="text-[var(--text-color-dark)] text-base px-4 py-1.5 rounded-[10px] hover:bg-[#2f1b3a] transition"
                 >
-                  {id === 'experience' ? 'Background' : id === 'about' ? 'About me' : id.charAt(0).toUpperCase() + id.slice(1)}
+                  {id === 'tech' ? 'Tech' : id === 'about' ? 'About me' : id.charAt(0).toUpperCase() + id.slice(1)}
                 </a>
               </li>
             ))}

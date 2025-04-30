@@ -5,10 +5,12 @@ import Header from './components/layout/Header'
 import Hero from './components/sections/Hero'
 import Projects from './components/sections/Projects'
 import SideProjects from './components/sections/SideProjects'
+import Tech from './components/sections/Tech'
 import AboutMe from './components/sections/AboutMe'
 import Contact from './components/sections/Contact'
 import Footer from './components/layout/Footer'
 import BackToTop from './components/ui/BackToTop'
+
 
 function App() {
 
@@ -18,6 +20,7 @@ function App() {
       <Hero />
       <Projects />
       <SideProjects />
+      <Tech />
       <AboutMe />
       <Contact />
       <Footer />
