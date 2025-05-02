@@ -22,7 +22,7 @@ const Hero = () => {
               I enjoy working on both backend and frontend development.
             </p>
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
-            <a aria-label="Download my CV in PDF format" href="/cv-magali-mourino.pdf" target="_blank" rel="noopener noreferrer">
+            <a aria-label="Download my CV in PDF format" href="/CV-magali-mourino.pdf" target="_blank" rel="noopener noreferrer">
               <Button  text="Download CV" icon={faArrowDown} className="btn text-base" />
             </a>
               
