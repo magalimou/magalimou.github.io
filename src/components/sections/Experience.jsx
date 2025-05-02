@@ -58,7 +58,7 @@ const Experience = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-2xl font-semibold">{selected.role}</h3>
+          <h3 className="text-xl lg:text-2xl font-semibold">{selected.role}</h3>
           <p className="text-lg text-gray-400">
             {selected.company} {selected.period && `| ${selected.period}`}
           </p>
