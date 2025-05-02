@@ -21,7 +21,7 @@ const Header = () => {
         {/*Deskop Menu */}
         <nav className="hidden sm:block w-full">
           <ul className="flex justify-center items-center list-none">
-            {['projects', 'stack', 'about', 'contact'].map((id, index) => (
+            {['projects', 'stack', 'about', "experience", 'contact'].map((id, index) => (
               <li key={id} className="mr-12">
                 <a
                   href={`#${id}`}
