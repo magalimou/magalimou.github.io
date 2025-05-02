@@ -32,7 +32,7 @@ const Tech = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               viewport={{ once: true }}
-              className="relative px-6 py-20 lg:py-42 sm:px-12 md:px-20 lg:px-40 xl:px-70"
+              className="relative px-6 py-20 lg:py-35 sm:px-12 md:px-20 lg:px-40 xl:px-70"
             >
               <div className="container mx-auto">
                 <motion.h2

@@ -49,7 +49,7 @@ const SideProjects = () => {
                 </motion.div>
             ))}
         </div>
-        <div className="circle-background-purple top-5/10 left-5/10 w-[250px] h-[250px] lg:w-[450px] lg:h-[450px]"></div>
+        <div className="blur-2xl circle-background-purple top-5/10 left-5/10 w-[250px] h-[250px] lg:w-[450px] lg:h-[450px]"></div>
         </section>
     );
 }

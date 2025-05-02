@@ -5,7 +5,7 @@ const TechCard = ({title, stack, icon}) => {
     return (
         <div className="bg-[#1C1222] p-8 shadow-md hover:shadow-xl/30 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:border-2 hover:border-violet-300 hover:shadow-gray-400/30 hover:bg-[#180E1E]">
             <div>
-                <div className='flex text-start items-center  '>
+                <div className='flex text-start items-center mb-2'>
                     <FontAwesomeIcon icon={icon} className="icon text-lg mr-2 text-orange-300" />
                     <h3 className="text-white text-2xl font-semibold ">{title} </h3>
                 </div>

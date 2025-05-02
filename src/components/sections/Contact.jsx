@@ -48,7 +48,7 @@ const Contact = () => {
                 </motion.div>
             </motion.div>
             <div className="top-2/3 left-19/20 w-[300px] h-[250px] lg:w-[400px] lg:h-[370px] circle-background"></div>
-            <div className="top-1/3 left-1/55 w-[250px] h-[200px] lg:w-[400px] lg:h-[370px] circle-background-purple"></div>
+            <div className="blur-2xl top-1/3 left-1/55 w-[250px] h-[200px] lg:w-[400px] lg:h-[370px] circle-background-purple"></div>
         </section>
     );
 }

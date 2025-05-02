@@ -60,7 +60,7 @@ const Projects = () => {
         ))}
 
         
-        <div className="top-11/13 left-/10 w-[0px] h-[0px] lg:w-[200px] lg:h-[200px]  circle-background-orange"></div>
+        <div className="blur-3xl top-11/13 left-/10 w-[0px] h-[0px] lg:w-[200px] lg:h-[200px]  circle-background-orange"></div>
     </section>
   );
 };

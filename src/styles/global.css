@@ -126,7 +126,6 @@ body {
     border-radius: 50%;
     background: radial-gradient(circle farthest-corner at center center, 
       #5d2fd2de 27%, #5E2FD2 20%, #673cd2 37%, #100914 49%);
-    filter: blur(60px);
     z-index: -1; 
     overflow: hidden;
 }
@@ -140,7 +139,6 @@ body {
     #FF6B2D 40%,  
     #CF5828 70%,   
     #100914 100%); 
-    filter: blur(35px);
     z-index: -1; 
     overflow: hidden;
 }
