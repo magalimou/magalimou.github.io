@@ -1,90 +1,78 @@
-import { useState } from "react";
-import ExperienceCard from "../ui/ExperienceCard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSuitcase, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import { motion } from 'framer-motion';
+
+import { useState } from 'react';
+import { experiences } from '../data/experienceData';
 
 const Experience = () => {
+  const [selectedId, setSelectedId] = useState('solvd');
+  const selected = experiences.find((exp) => exp.id === selectedId);
 
-    const [activeTab, setActiveTab] = useState("work");
+  return (
+    <motion.section
+      id="experience"
+      className="relative px-6 py-20 lg:py-30 sm:px-12 md:px-20 lg:px-40 xl:px-70 text-white"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
+      <motion.h2
+        className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold mb-6 sm:mb-8 md:mb-10"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.6 }}
+      >
+        Experience
+      </motion.h2>
 
-    const workData = [
-        {
-        title: "Title",
-        company: "Tech Company",
-        description: "Description.",
-        date: "January 2022 - Present",
-        },
-        {
-        title: "Title",
-        company: "Another Tech Company",
-        description: "Description.",
-        date: "June 2021 - December 2021",
-        },
-    ];
-
-    const educationData = [
-        {
-          title: "Systems Engineering",
-          company: "UNICEN",
-          description: "",
-          date: "February 2025 - Present",
-        },
-        {
-          title: "Tecnicatura Universitaria en Programación",
-          company: "UTN",
-          description: "",
-          date: "February 2022 - December 2023",
-        },
-    ];
-
-    const dataToShow = activeTab === "work" ? workData : educationData;
-
-    return (
-        <section
-          id="experience"
-          className="scroll-mt-24 py-16 px-6 sm:px-12 md:px-20 lg:px-50 xl:px-70"
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Left sidebar */}
+        <motion.div
+          className="flex flex-col gap-4"
+          initial={{ x: -20, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
         >
-          <div className="container mx-auto">
-            <div className="flex gap-4 mb-15 justify-around items-center">
-              <button
-                className={`cursor-pointer px-4 py-2 rounded-full transition text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-medium ${
-                  activeTab === "work"
-                    ? "border-purple-500 text-purple-400"
-                    : "border-purple-500 text-white"
-                }`}
-                onClick={() => setActiveTab("work")}
-              >
-                Work
-              </button>
-              <button
-                className={` cursor-pointer px-4 py-2 rounded-full transition text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-medium ${
-                  activeTab === "education"
-                    ? "border-purple-500 text-purple-400"
-                    : "border-[var(--primary-purple-color)] text-white"
-                }`}
-                onClick={() => setActiveTab("education")}
-              >
-                Education
-              </button>
-            </div>
-    
-            <div className="w-full flex justify-center">
-  <div className="w-full max-w-4xl px-4">
-    {dataToShow.map((item, index) => (
-      <ExperienceCard
-        key={index}
-        title={item.title}
-        company={item.company}
-        description={item.description}
-        date={item.date}
-      />
-    ))}
-  </div>
-</div>
+          {experiences.map((exp) => (
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              key={exp.id}
+              onClick={() => setSelectedId(exp.id)}
+              className={`text-left hover:border-2 rounded-md p-4 hover:bg-[#100914] hover:border-[#A597F6] transition ${
+                selectedId === exp.id ? 'bg-[#1C1222]' : 'border-2 border-[#33223E]'
+              }`}
+            >
+              <h3 className="text-lg font-semibold">{exp.role}</h3>
+              <p className="text-base text-gray-400">{exp.company}</p>
+            </motion.button>
+          ))}
+        </motion.div>
 
-          </div>
-        </section>
-    );
-}
+        {/* Right content */}
+        <motion.div
+          className="md:col-span-2 bg-[#1C1222] p-6 rounded-md"
+          key={selectedId}
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h3 className="text-2xl font-semibold">{selected.role}</h3>
+          <p className="text-lg text-gray-400">
+            {selected.company} {selected.period && `| ${selected.period}`}
+          </p>
+          <ul className="list-disc pl-6 space-y-2 mt-4 text-base">
+            {selected.bullets.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        </motion.div>
+      </div>
+
+      <div className="top-3/7 right-1/70 blur-3xl w-[70px] h-[70px] lg:w-[300px] lg:h-[300px] circle-background-orange"></div>
+    </motion.section>
+  );
+};
 
 export default Experience;
